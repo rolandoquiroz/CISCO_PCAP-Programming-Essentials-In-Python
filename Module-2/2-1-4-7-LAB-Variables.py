@@ -1,19 +1,13 @@
 #!/usr/bin/python3
 """
-List of priorities
-
-Priority 	Operator
-1 	+, - 	unary
-2 	**
-3 	*, /, %
-4 	+, - 	binary
-
-Subexpressions in parentheses are always calculated first.
+Once upon a time in Appleland, John had three apples,
+Mary had five apples, and Adam had six apples.
+They were all very happy and lived for a long time.
+End of story.
 """
-print(2 + 3 * 5)
-# the modulo operator uses left-sided binding
-print(9 % 6 % 2)
-# just the exponentiation operator uses right-sided binding
-print(2 ** 2 ** 3)
-print(2 * 3 % 5)
-print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
+john = 3
+mary = 5
+adam = 6
+print('John:', john, ' Mary:', mary, ' Adam:', adam)
+totalApples = john + mary + adam
+print('Total number of apples: ', totalApples)
