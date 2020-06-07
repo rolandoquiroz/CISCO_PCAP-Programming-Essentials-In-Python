@@ -17,27 +17,27 @@ complete the next layer, they finish their work immediately.
 
 Test your code using the data we've provided.
 
-Sample input: 6
+Sample input: 2
+Expected output: The height of the pyramid: 1
 
+Sample input: 6
 Expected output: The height of the pyramid: 3
 
 Sample input: 20
-
 Expected output: The height of the pyramid: 5
 
 Sample input: 1000
-
 Expected output: The height of the pyramid: 44
-
-Sample input: 2
-
-Expected output: The height of the pyramid: 1
 """
 blocks = int(input("Enter the number of blocks: "))
 
 height = 0
-while height <= blocks:
+while (((height * (height + 1))/2) < blocks):
     height += 1
-    
+    if (((height * (height + 1))/2) == blocks):
+        break
+    if (((height * (height + 1))/2) > blocks):
+        height -= 1
+        break
 
 print("The height of the pyramid:", height)
