@@ -1,26 +1,13 @@
 #!/usr/bin/python3
 """
-Any of the list's elements may be removed at any time
-- this is done with an instruction named del (delete).
-Note: it's an instruction, not a function.
+It may look strange, but negative indices are legal,
+and can be very useful.
 
-You have to point to the element to be removed - it'll
-vanish from the list, and the list's length will be
-reduced by one.
+An element with an index equal to -1 is the last one in the list.
+
+Similarly, the element with an index equal to -2 is the one before
+last in the list.
 """
-numbers = [10, 5, 7, 2, 1]
-print("Original list content:", numbers)  # printing original list content
-
-numbers[0] = 111
-print("\nPrevious list content:", numbers)  # printing previous list content
-
-numbers[1] = numbers[4]  # copying value of the fifth element to the second
-print("Previous list content:", numbers)  # printing previous list content
-
-print("\nList length:", len(numbers))  # printing previous list lenght
-
-###
-
-del numbers[1]  # removing the second element from the list
-print("New list's lenght:", len(numbers))  # printing new list lenght
-print("\nNew list content:", numbers)  # printing current list content
+numbers = [111, 7, 2, 1]
+print(numbers[-1])
+print(numbers[-2])
