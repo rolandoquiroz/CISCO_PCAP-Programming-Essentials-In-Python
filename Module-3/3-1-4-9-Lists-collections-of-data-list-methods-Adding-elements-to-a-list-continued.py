@@ -6,7 +6,6 @@ You can start a list's life by making it empty
 (this is done with an empty pair of square brackets or
 using the list() constructor)
 and then adding new elements to it as needed.
-
 """
 myList = []  # Method 1: empty list: empty pair of square brackets
 
