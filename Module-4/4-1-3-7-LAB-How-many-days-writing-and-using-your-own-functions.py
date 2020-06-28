@@ -48,4 +48,3 @@ for i in range(len(testYears)):
         print("OK")
     else:
         print("Failed")
-        print("Failed")
