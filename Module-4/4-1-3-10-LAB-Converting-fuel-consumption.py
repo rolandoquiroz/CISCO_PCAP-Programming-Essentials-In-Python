@@ -36,17 +36,22 @@ Expected output:
 
 
 def l100kmtompg(liters):
-    #
-    # put your code here
-    #
-    return (3.785411784/((1609.344/100000)*liters))
+    """
+    100000 m * 3.785411784 l  [  mi  ]
+    ________________________  ________
+      1609.344 m * liters       [ g ]
+
+    """
+    return ((100000*3.785411784)/(1609.344*liters))
 
 
 def mpgtol100km(miles):
-    #
-    # put your code here
-    #
-    return (3.785411784/((1609.344/100000)*miles))
+    """
+    100000 m * 3.785411784 l  [   l   ]
+    ________________________  _________
+       1609.344 m * miles     [ 100Km ]
+    """
+    return ((100000*3.785411784)/(1609.344*miles))
 
 
 print(l100kmtompg(3.9))
